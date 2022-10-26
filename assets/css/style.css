@@ -96,7 +96,25 @@ body {
 }
 
 
+/*------Work process----*/
 
+.work-process-text{
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.06px;
+}
+
+.wp-img{
+    display: flex;
+    justify-content: center;
+}
+
+.working-process-contents-right img{
+    height: 400px;
+    width: 100%;
+}
 
 
 

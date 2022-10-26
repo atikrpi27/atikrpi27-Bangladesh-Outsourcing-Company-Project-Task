@@ -1,0 +1,140 @@
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #D8DBE1;
+}
+
+.header-banner{
+    background-color: #383838;
+    height: 75vh;
+    width: 100%;
+}
+
+.banner-text{
+    color: #FFFF;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.intro-img img{
+    height: 320px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.intro-description p{
+    text-align: justify;
+}
+
+
+
+.service-heading,
+.work-process-heading{
+    height: 110px;
+    display: flex;
+    align-items: center;
+    background-color: #C1CCDB;
+    color: #282C35;
+}
+
+/*==============================================
+                Start Services
+===============================================*/
+
+#services .section-heading .section-title {
+    font-size: 36px;
+}
+
+#services .services-item {
+    float: left;
+    transition: transform .3s;
+    padding: 30px 20px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    height: 285px;
+    box-shadow: 0 5px 9px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+#services .services-item:hover{
+    transform: scale(1.03);
+    box-shadow: 0 5px 9px 0px rgb(0 0 0 / 40%);
+}
+
+.services-item img{
+    height: 55px;
+    width: 65px;
+}
+
+#services .services-item img:hover{
+    transition:1.5s;
+}
+
+#services .services-item img:hover{
+    transform:scale(1.3);
+}
+
+#services .services-item .item-title {
+    margin: 20px 0 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.services-item p{
+    text-align: justify;
+    word-break: break-all;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 425px) {
+    .intro-img img{
+        height: 250px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        padding: 0 10%;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    .intro-img img{
+        height: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .intro-img img{
+        height: 360px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

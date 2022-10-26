@@ -6,25 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service - BOC</title>
-    <!--------------Title Icon-------------->
+    <!--------------Favicons-------------->
     <link rel="Icon" href="assets/images/icon.png" />
     <!--------------Font Awesome CDN-------------->
     <script src="https://kit.fontawesome.com/7a78b2cf01.js" crossorigin="anonymous"></script>
     <!----------Bootstrap CSS CDN----------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <!---------------vendor CSS--------------->
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <!---------------Main CSS--------------->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+    <nav class='navbar navbar-expand-lg navbar-light bg-danger'>
+        <div class='container-fluid'>
+            <a class='navbar-brand text-white' href='#'>
+                <img src="assets/images/icon.png" />
+            </a>
+            <button class='btn btn-danger navbar-toggler border-3 px-2' type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasExample' aria-controls='offcanvasExample'>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class='offcanvas offcanvas-start-lg' tabindex='-1' id='offcanvasExample' aria-labelledby='offcanvasExampleLabel'>
+                <div class='offcanvas-header d-flex d-lg-none'>
+                    <h5 class='offcanvas-title' id='offcanvasExampleLabel'>
+                        <img src="assets/images/icon.png" />
+                    </h5>
+                    <a href='javascript:void(0) ' class='text-reset p-0' data-bs-dismiss='offcanvas' aria-label='close'>
+                        <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' class='bi bi-x-circle' viewBox='0 0 16 16'>
+                            <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z' />
+                            <path
+                                d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z' />
+                        </svg>
+                    </a>
+                </div>
+                <div class='offcanvas-body p-lg-0'>
+                    <ul class='navbar-nav ms-lg-auto'>
+                        <li class='nav-item'>
+                            <a class='nav-link active' aria-current='page' href='#'>Home</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link active' aria-current='page' href='index.html'>Service</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link active' aria-current='page' href='#'>Blog</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link active' aria-current='page' href='about.html'>About</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link active' aria-current='page' href='#'>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="header-banner">
                 <div class="container">
                     <div class="banner-text">
                         <h1>WHAT DO WE SERVE?</h1>
-                        <p class="text-justify">Comprehensive technology services that integrate digital craftsmanship
-                            and business goals.</p>
+                        <p class="text-justify">Comprehensive technology services that integrate digital craftsmanship and business goals.</p>
                         <p>More, now than ever, values matter.</p>
                     </div>
                 </div>
@@ -52,7 +98,7 @@
                                     your brand and re-target your customers to come back. Trigger personalized emails
                                     based on your customer's activity and interests. Our highly reputed network
                                     guarantees your email placement directly to the recipient's inbox.With a vision to
-                                    excel, our each plan and action is inspired by our core values that enable us to
+                                    excel, our each plan and action is inspired by our  values that enable us to
                                     focus towards growth on the righteous path.</span>
                             </p>
                         </div>
@@ -82,8 +128,7 @@
                                     <div class="services-item">
                                         <img src="assets/images/computers.png">
                                         <h4 class="item-title">Web Development</h4>
-                                        <p class="item-desc">In order to provide our clients with only the best
-                                            websites, we use the latest technology and advanced web technology.
+                                        <p class="item-desc">In order to provide our clients with only the best websites, we use the latest technology and advanced web technology.
                                         </p>
                                     </div>
                                 </div>
@@ -94,8 +139,7 @@
                                     <div class="services-item">
                                         <img src="assets/images/graphics.png">
                                         <h4 class="item-title">Graphics Design</h4>
-                                        <p class="item-desc">To provide our clients with only the best photographs, we
-                                            employ cutting-edge advanced photo enhancing technologies.
+                                        <p class="item-desc">To provide our clients with only the best photographs, we employ cutting-edge advanced photo enhancing technologies.
                                         </p>
                                     </div>
                                 </div>
@@ -105,8 +149,7 @@
                                     <div class="services-item">
                                         <img src="assets/images/dataEntry.png">
                                         <h4 class="item-title">Data Entry Services</h4>
-                                        <p class="item-desc">Get high-quality data entry services from experienced
-                                            professionals at strategies in accordance affordable pricing.
+                                        <p class="item-desc">Get high-quality data entry services from experienced professionals at strategies in accordance affordable pricing.
                                         </p>
                                     </div>
                                 </div>
@@ -116,8 +159,7 @@
                                     <div class="services-item">
                                         <img src="assets/images/digitalMarketting.png">
                                         <h4 class="item-title">Digital Marketing</h4>
-                                        <p class="item-desc">Our technologically advanced experts implement effective
-                                            web advertising with your corporate objectives.
+                                        <p class="item-desc">Our technologically advanced experts implement effective web advertising with your corporate objectives.
                                         </p>
                                     </div>
                                 </div>
@@ -146,9 +188,7 @@
 
                         </div>
                         <div class="col-lg-8 col-md-12 col-sm-12">
-                            <p class="text-center work-process-text mb-5">We develop with a step by step process that
-                                involves test trials at every step to get the task done with precision and excellence.
-                                Here is a quick look of how we work:</p>
+                            <p class="text-center work-process-text mb-5">We develop with a step by step process that involves test trials at every step to get the task done with precision and excellence. Here is a quick look of how we work:</p>
                         </div>
                         <div class="col-lg-2 col-md-12 col-sm-12">
 
@@ -198,7 +238,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="working-process-contents-right">
                                     <img src="assets/images/wp man.png" alt="Working Process Man">
@@ -309,12 +349,135 @@
             </div>
         </section>
 
+        <!-- ======= Testimonials Section ======= -->
 
+        <section id="testimonials" class="testimonials">
+            <div class="testimonials-heading">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <h2 class="text-uppercase">Our all Clients Review</h2>
+                            <p class="ms-3">- what they are saying ...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="container">
+                <!-- <div class="section-header">
+                    <h2>Testimonials</h2>
+                    <p>What they are saying</p>
+                </div> -->
 
+                <div class="slides-3 swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/images/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                                    <h3>Saul Goodman</h3>
+                                    <h4>Ceo &amp; Founder</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/images/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                                    <h3>Sara Wilsson</h3>
+                                    <h4>Designer</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/images/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                                    <h3>Jena Karlis</h3>
+                                    <h4>Store Owner</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/images/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                                    <h3>Matt Brandon</h3>
+                                    <h4>Freelancer</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/images/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                                    <h3>John Larson</h3>
+                                    <h4>Entrepreneur</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
     </div>
 
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span class="">Bangladesh Outsourcing Company</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a href="https://atikrpi27.github.io/Portfolio/" target="_blank" class="text-dark">Atikur
+                    Rahman</a>
+            </div>
+        </div>
+    </footer>
 
+    <!------ Scroll Top to Button ------>
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <!--------Bootstrap JavaScript CDN-------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <!------------Main JavaScript------------>

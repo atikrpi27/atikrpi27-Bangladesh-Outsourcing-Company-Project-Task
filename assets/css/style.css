@@ -1,3 +1,11 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+All Common styling
+Developer:  Atikur Rahman
+Author URI: https://atikrpi27.github.io/Portfolio/
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 *,
 *::after,
 *::before {
@@ -6,18 +14,112 @@
     box-sizing: border-box;
 }
 
+:root {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
     background-color: #D8DBE1;
 }
 
-.header-banner{
+
+/*==============================================
+                Navigation
+===============================================*/
+
+.navbar {
+    height: 60px;
+    padding: 0px 30px !important;
+    background-color: #d8dbe1 !important;
+}
+
+.navbar-brand img,
+.offcanvas-title img {
+    height: 40px;
+    width: 50px;
+}
+
+.offcanvas-header {
+    display: flex;
+    background: #d8dbe1c2;
+}
+
+.navbar .offcanvas-body .navbar-nav .nav-item {
+    margin: 0px 20px;
+}
+
+.navbar .offcanvas-body .navbar-nav .nav-item {
+    background-color: #d8dbe1;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    color: rgb(78, 78, 78);
+}
+
+.navbar .offcanvas-body .navbar-nav .nav-item:active:hover {
+    box-shadow: inset 9px 9px 16px rgb(163, 177, 198, 0.6), inset -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.navbar .offcanvas-body .navbar-nav .nav-item a:active {
+    color: white;
+}
+
+.navbar .offcanvas-body .navbar-nav .nav-item a {
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #616161;
+    font-size: 16px;
+    font-family: "Poppins";
+}
+
+.navbar .offcanvas-body .navbar-nav .nav-item a:hover {
+    color: white;
+    background-color: #d8dbe17d;
+}
+
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: #c4c8ce !important;
+    /* border-color: var(--bs-btn-hover-border-color); */
+}
+
+
+/*---------------------
+    Navbar Toggling
+----------------------*/
+
+.navbar-toggler {
+    border: none;
+    color: white !important;
+}
+
+.navbar-toggler.ThreeDot {
+    width: 40px;
+    margin-top: 2px;
+}
+
+.navbar-toggler svg {
+    font-size: xx-large;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/*==============================================
+                / Navigation
+===============================================*/
+
+.header-banner {
     background-color: #383838;
     height: 75vh;
     width: 100%;
 }
 
-.banner-text{
+.banner-text {
     color: #FFFF;
     height: 70vh;
     display: flex;
@@ -26,26 +128,27 @@ body {
     /* align-items: center; */
 }
 
-.intro-img img{
+.intro-img img {
     height: 320px;
     width: 100%;
     border-radius: 15px;
 }
 
-.intro-description p{
+.intro-description p {
     text-align: justify;
 }
 
-
-
 .service-heading,
-.work-process-heading{
+.work-process-heading,
+.testimonials-heading,
+.team-heading {
     height: 110px;
     display: flex;
     align-items: center;
     background-color: #C1CCDB;
     color: #282C35;
 }
+
 
 /*==============================================
                 Start Services
@@ -66,22 +169,24 @@ body {
     border-radius: 10px;
 }
 
-#services .services-item:hover{
+#services .services-item:hover {
+    background-color: #e0e0e2;
+    cursor: pointer;
     transform: scale(1.03);
     box-shadow: 0 5px 9px 0px rgb(0 0 0 / 40%);
 }
 
-.services-item img{
+.services-item img {
     height: 55px;
     width: 65px;
 }
 
-#services .services-item img:hover{
-    transition:1.5s;
+#services .services-item img:hover {
+    transition: 1.5s;
 }
 
-#services .services-item img:hover{
-    transform:scale(1.3);
+#services .services-item img:hover {
+    transform: scale(1.3);
 }
 
 #services .services-item .item-title {
@@ -90,15 +195,18 @@ body {
     font-weight: 500;
 }
 
-.services-item p{
+.services-item p {
     text-align: justify;
     word-break: break-all;
 }
 
 
-/*------Work process----*/
+/*==============================================
+               Work process
+===============================================*/
 
-.work-process-text{
+.work-process-text,
+.team-text {
     font-family: "Poppins", Sans-serif;
     font-size: 17px;
     font-weight: 400;
@@ -106,22 +214,340 @@ body {
     letter-spacing: 0.06px;
 }
 
-.wp-img{
+.wp-img {
     display: flex;
     justify-content: center;
 }
 
-.working-process-contents-right img{
+.working-process-contents-right img {
     height: 400px;
     width: 100%;
 }
 
 
+/*==============================================
+               Testimonials Section
+===============================================*/
+
+.testimonials {
+    margin-top: 80px;
+}
+
+.testimonials .testimonial-item {
+    box-sizing: content-box;
+    padding: 30px;
+    margin: 40px 30px;
+    background: rgb(133 133 133);
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.testimonials .testimonial-item .stars {
+    margin-bottom: 15px;
+}
+
+.testimonials .testimonial-item .stars i {
+    color: #ffc107;
+    margin: 0 1px;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+    width: 90px;
+    border-radius: 50%;
+    border: 5px solid #474a4d;
+    margin: 0 auto;
+}
+
+.testimonials .testimonial-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #fff;
+}
+
+.testimonials .testimonial-item h4 {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+.testimonials .testimonial-item p {
+    font-style: italic;
+    margin: 0 auto 15px auto;
+}
+
+.testimonials .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 1;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.testimonials .swiper-slide {
+    opacity: 0.3;
+}
 
 
+/*------- Scroll top button ------*/
+
+.scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 1;
+    right: 15px;
+    bottom: -15px;
+    z-index: 99999;
+    background: rgba(122, 121, 121, 0.8);
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.scroll-top i {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    line-height: 0;
+}
+
+.scroll-top:hover {
+    background: #27a776;
+    color: rgb(255, 255, 255);
+}
+
+.scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+    bottom: 15px;
+}
+
+
+/*==============================================
+                About Page
+===============================================*/
+
+
+/*----Values Section-----*/
+
+.about-left {
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+}
+
+.about-left p:first-child {
+    color: #27a776;
+}
+
+.about-right img {
+    width: 100%;
+}
+
+.about-button a {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.about-button a:hover {
+    color: #ebebeb
+}
+
+.learn-more,
+.getQuote {
+    font-size: 15px;
+    font-family: Arial;
+    width: 140px;
+    height: 50px;
+    padding: 10px;
+    border-width: 1px;
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(7, 255, 203, 1);
+    font-weight: bold;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 10px 14px -7px rgba(0, 168, 112, 1);
+    text-shadow: 0px 1px 0px rgba(91, 138, 60, 0.87);
+    background: linear-gradient(rgba(80, 227, 194, 1), rgba(80, 227, 194, 1));
+}
+
+.learn-more:hover {
+    background: linear-gradient(rgb(53, 226, 189), rgb(17, 170, 137));
+}
+
+.getQuote:hover {
+    background: linear-gradient(rgb(53, 226, 189), rgb(17, 170, 137));
+}
+
+.values-img {
+    width: 100%;
+    height: 80%;
+}
+
+.values-text {
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.06px;
+}
+
+
+/*==============================================
+                Team Section-
+===============================================*/
+
+.team .team-member .member-img {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.team .team-member .social {
+    position: absolute;
+    left: 0;
+    top: -18px;
+    right: 0;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team .team-member .social a {
+    transition: color 0.3s;
+    color: #FFFF;
+    background: #0ea2bd;
+    margin: 0 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.team .team-member .social a i {
+    line-height: 0;
+    font-size: 16px;
+}
+
+.team .team-member .social a:hover {
+    background: #1ec3e0;
+}
+
+.team .team-member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+.team .team-member .member-info {
+    padding: 30px 15px;
+    text-align: center;
+    background: #FFFF;
+    margin: -50px 20px 0 20px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.team .team-member .member-info h4 {
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: #485664;
+}
+
+.team .team-member .member-info span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6c757d;
+}
+
+.team .team-member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+    color: #6c757d;
+}
+
+.team .team-member:hover .social {
+    opacity: 1;
+}
+
+
+/*--------------------------------------------------------------
+                           # Footer
+--------------------------------------------------------------*/
+
+.footer {
+    margin-top: 30px;
+    padding: 30px 0;
+    font-size: 17px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    background: #aeb3be;
+}
+
+.footer .copyright {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .credits {
+    padding-top: 6px;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .credits a {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.footer .credits a:hover {
+    color: white !important;
+}
+
+
+/*--------------------------------------------------------------
+                        Media Query
+--------------------------------------------------------------*/
+
+@media (max-width: 1199px) {
+    .testimonials .swiper-slide-active {
+        opacity: 1;
+    }
+    .testimonials .swiper-pagination {
+        margin-top: 0;
+    }
+    .testimonials .testimonial-item {
+        margin: 40px 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .testimonials .swiper-slide-next {
+        opacity: 1;
+        transform: scale(1.12);
+    }
+}
 
 @media only screen and (max-width: 425px) {
-    .intro-img img{
+    .intro-img img {
         height: 250px;
         width: 100%;
         display: flex;
@@ -134,10 +560,13 @@ body {
     .container {
         padding: 0 10%;
     }
+    .about-button a {
+        margin-left: 4px;
+    }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 768px){
-    .intro-img img{
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .intro-img img {
         height: 400px;
         width: 100%;
         display: flex;
@@ -146,13 +575,53 @@ body {
     }
 }
 
-
-@media only screen and (min-width: 992px) and (max-width: 1200px){
-    .intro-img img{
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .intro-img img {
         height: 360px;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+
+/* ----------------------------------------------------
+              Responsive navigation
+------------------------------------------------------*/
+
+@media (max-width: 992px) {
+    .navbar .offcanvas-body .navbar-nav .nav-item {
+        margin: 5px 5px;
+    }
+    .navbar .offcanvas-body .navbar-nav .nav-item a {
+        padding: 10px 20px;
+    }
+    .navbar .offcanvas-body {
+        padding: 10px 4px;
+        background: #d8dbe1a6;
+    }
+}
+
+@media (min-width: 992px) {
+    .offcanvas {
+        visibility: visible;
+        position: relative;
+        background: none;
+        border: none;
+        justify-content: end;
+        color: #d8dbe1;
+    }
+}
+
+@media (max-width: 992px) {
+    .offcanvas {
+        width: 250px !important;
+    }
+    .offcanvas-start-lg {
+        top: 0;
+        left: 0;
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+        transform: translateX(-100%);
     }
 }

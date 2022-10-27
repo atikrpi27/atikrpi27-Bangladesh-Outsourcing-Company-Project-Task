@@ -563,6 +563,9 @@ body {
     .about-button a {
         margin-left: 4px;
     }
+    .working-process-contents-right {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {

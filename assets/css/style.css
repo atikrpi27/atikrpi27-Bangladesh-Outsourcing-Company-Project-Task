@@ -250,6 +250,17 @@ body {
     z-index: 10;
 }
 
+.second-header-text{
+    display: flex;
+    align-items: center;
+    color: #282C35;
+}
+
+.second-header-content p,
+.description ul li,
+.choose ul li{
+    font-size: 14px;
+}
 
 /*==============================================
                Working process

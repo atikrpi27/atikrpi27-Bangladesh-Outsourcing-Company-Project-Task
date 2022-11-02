@@ -139,7 +139,8 @@ body {
 .service-heading,
 .work-process-heading,
 .testimonials-heading,
-.team-heading {
+.team-heading,
+.pricing-process-heading {
     height: 110px;
     display: flex;
     align-items: center;
@@ -200,7 +201,58 @@ body {
 
 
 /*==============================================
-               Work process
+               Pricing
+===============================================*/
+
+#pricing{
+    height: auto;
+    margin-bottom: 30px;
+    /* background-color: #27a776; */
+    /* z-index: 1; */
+}
+
+#pricing-process{
+    height: 110px;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+}
+
+.sub-nav ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.sub-nav:first-child{
+    padding-left: 0px;
+}
+.sub-nav ul li{
+    float: left;
+    padding: 0px 15px;
+    border-right: 1px dotted black;
+}
+
+.sub-nav ul li a{
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.second-header{
+    background-color: #d8dbe1;
+    height: 110px;
+    position: sticky;
+    top: 110px;
+    border-bottom: 1px solid white;
+    z-index: 10;
+}
+
+
+/*==============================================
+               Working process
 ===============================================*/
 
 .work-process-text,

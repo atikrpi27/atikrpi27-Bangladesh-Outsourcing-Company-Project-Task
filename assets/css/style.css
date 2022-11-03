@@ -509,6 +509,13 @@ body {
     padding:0;
 }
 
+.service_fixed{
+    position: fixed !important;
+    top: 25px;
+    width: 355px;
+    right: 117px;
+}
+
 
 /*==============================================
                Working process

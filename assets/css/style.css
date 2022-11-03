@@ -267,15 +267,12 @@ body {
                 Card Right
 ----------------------------------------------*/
 
-
 #service_col_main {
-    /* cursor: none; */
     padding-bottom: 25px;
 }
 
 #service_col_one {
     background: #D8DBE1;
-    /* border-right: 2px solid #a8a9ad; */
 }
 
 #service_col_one div.service_col_one_1 {
@@ -291,11 +288,9 @@ body {
 
 
 #service_col_one div.service_col_one_2 {
-    /* box-shadow: 3px 3px 6px #a8a9ad, -3px -3px 6px #cecaca; */
     height: 70vh;
     width: 90%;
     overflow: auto;
-    /* box-shadow: inset 3px 3px 6px #a2a3ab, inset -3px -3px 6px #ffffff; */
     border-right: 1px solid #fff;
 }
 
@@ -310,8 +305,6 @@ body {
 }
 
 #service_col_two {
-    /* background-color: green; */
-    /* height: 75vh; */
     padding: 0;
     margin: 0;
     padding-right: 30px;
@@ -328,8 +321,6 @@ body {
 }
 
 #service_col_two .sct_heading {
-    /* padding: 125px 15px 15px !important;
-    margin-top: -100px; */
     border-bottom: 1px solid #fff;
     background: #d8dbe1;
     z-index: 20;
@@ -338,7 +329,6 @@ body {
 }
 
 #img_replace {
-    /* background-size: cover; */
     box-shadow: 3px 3px 6px #a2a3ab, -3px -3px 6px #ffffff;
     width: 100%;
     min-height: 150px;
@@ -354,7 +344,6 @@ body {
 }
 
 #service_col_two .sct_content {
-    /* height: 60vh; */
     padding: 10px 5px;
 }
 
@@ -363,10 +352,15 @@ body {
 }
 
 
+#service_col_three {
+    margin-top: -190px;
+    z-index: 22;
+    /* position: fixed; */
+}
+
 #service_col_three div.service_col_three_main {
     border: 1px solid #fff;
     background: #D8DBE1;
-    /* height: 75vh; */
     padding-right: 12px;
     padding-bottom: 15px;
 }
@@ -374,8 +368,7 @@ body {
 #service_col_three div.service_col_three_main .col {
     text-align: center;
     padding: 10px;
-    /* border: 1px solid #fff; */
-    /* box-shadow: 7px 7.5px 7.5px -1px #aeb2b9; */
+    font-size: 14px;
     cursor: pointer;
     text-transform: uppercase;
     box-shadow: inset 3px 3px 6px #a2a3ab, inset -3px -3px 6px #ffffff;
@@ -386,17 +379,13 @@ body {
 }
 
 #service_col_three div.service_col_three_main #card_badge .col.active {
-    /* box-shadow: 3px 3px 6px #a2a3ab, -3px -3px 6px #ffffff; */
     box-shadow: none;
     background: #B6FAC5;
 }
 
 #service_col_three div.service_col_three_main #card_badge_price .col span.active {
-    /* box-shadow: 3px 3px 6px #a2a3ab, -3px -3px 6px #ffffff; */
     opacity: 25%;
 }
-
-/* #service_col_three div.service_col_three_main #card_info {} */
 
 #service_col_three div.service_col_three_main #card_info .card_info_heading {
     font-weight: 600;
@@ -409,8 +398,6 @@ body {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     box-shadow: 3px 3px 6px #a8a9ad, -3px -3px 6px #cecaca;
-    /* border-right: 5px solid #119707; */
-    /* background: #B6FAC5; */
     background: #0FAC04;
     color: #fff;
     font-weight: 600;
@@ -421,7 +408,6 @@ body {
     justify-content: end;
     align-items: center;
 }
-
 
 .contact_group {
     margin-top: 25px !important;
@@ -437,23 +423,17 @@ body {
     cursor: pointer;
     padding: 5px 5px;
     width: 90%;
-    /* border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px; */
     background: #0FAC04;
     border: 1px solid #fff;
     color: #fff;
-    /* box-shadow: 13px 2.5px 12px 3px #c6c6c6; */
 }
 
 .contact_group div:last-child .btn {
     cursor: pointer;
     padding: 5px 5px;
-    /* border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px; */
     background: #0FAC04;
     border: 1px solid #fff;
     color: #fff;
-    /* box-shadow: -13px 2.5px 12px 3px #c6c6c6 !important; */
 }
 
 .btn_right_shadow {
@@ -476,6 +456,57 @@ body {
     border-right: 1px solid #fff;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
+}
+
+.r-card{
+    z-index: 20;
+}
+
+.my-3{
+    box-shadow: 3px 3px 6px #a2a3ab, -3px -3px 6px #ffffff;
+}
+
+.myPackages{
+    border: 1px solid #B6FAC5;border-radius: 10px;
+}
+
+.myPackages h4{
+    font-size: 17px;
+}
+
+.package-heading{
+    box-shadow: inset 3px 3px 6px #a2a3ab, inset -3px -3px 6px #ffffff;
+}
+
+.myPackages-details{
+    box-shadow: none;
+    padding:10px;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.delivery{
+    padding: 25px 10px;
+    margin: 2px 0 0 0;
+    box-shadow:  3px 3px 6px #a2a3ab, -3px -3px 6px #ffffff;
+    padding:10px;
+}
+
+.delivery-text{
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.delivery-line{
+    box-shadow: inset 3px 3px 6px #a2a3ab, inset -3px -3px 6px #ffffff;
+    padding:10px;
+}
+
+.delivery-line ul{
+    list-style: none;
+    margin:0;
+    padding:0;
 }
 
 

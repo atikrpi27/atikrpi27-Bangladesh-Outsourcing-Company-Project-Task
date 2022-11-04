@@ -66,11 +66,31 @@ $(document).ready(function () {
     latestScrollTop = top;
     console.log(latestScrollTop);
 
-    if (latestScrollTop > 1480 && latestScrollTop < 3000) {
+    if (latestScrollTop > 1480 && latestScrollTop < 3800) {
       $(".service_col_three_main").addClass("service_fixed")
     }
     else {
       $(".service_col_three_main").removeClass("service_fixed")
     }
+    // Pricing Table card 
+    if (latestScrollTop > 2100 && latestScrollTop < 2570) {
+      $("#compare_packages").addClass("compare_packages")
+    }
+    else {
+      $("#compare_packages").removeClass("compare_packages")
+    }
+
+    // =================
+    if (latestScrollTop > 2570) {
+      $(".my-3").addClass("d-priceNone")
+      $(".delivery").addClass("d-priceNone")
+      $("#img_replace").addClass("table-img_replace")
+    }
+    else{
+      $(".my-3").removeClass("d-priceNone")
+      $(".delivery").removeClass("d-priceNone")
+      $("#img_replace").removeClass("table-img_replace")
+    }
+
   });
 });

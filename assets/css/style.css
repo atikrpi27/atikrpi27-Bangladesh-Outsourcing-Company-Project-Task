@@ -329,10 +329,14 @@ body {
 #img_replace {
     box-shadow: 3px 3px 6px #a2a3ab, -3px -3px 6px #ffffff;
     width: 100%;
-    min-height: 150px;
-    height: 150px;
+    /* min-height: 150px; */
+    height: 123px;
     overflow: hidden;
     padding: 0;
+}
+#img_replace img{
+    height: 100%;
+    width: 100%;
 }
 
 .service_two_fixed .sct_heading {
@@ -507,13 +511,6 @@ body {
     padding:0;
 }
 
-.service_fixed{
-    position: fixed !important;
-    top: 25px;
-    width: 355px;
-    right: 117px;
-}
-
 
 /* ------------------------------------
             Pricing Table
@@ -586,6 +583,7 @@ section.section_part {
     justify-content: center;
     display: flex;
     background-color: #d8dbe1;
+    z-index: 15;
 }
 
 section.section_part_02 {
@@ -1056,6 +1054,35 @@ section.section_part_02 .IMG_01_1 {
 
 
 /*--------------------------------------------------------------
+                JavaScript/JQuery CSS
+--------------------------------------------------------------*/
+
+
+.table-img_replace{
+    box-shadow: 3px 3px 6px #a2a3ab, -3px -3px 6px #ffffff !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+}
+
+.service_fixed{
+    position: fixed !important;
+    top: 25px;
+    width: 355px;
+    right: 117px;
+    /* transition: .3s all; */
+}
+
+.d-priceNone{
+    display: none !important;
+}
+
+.compare_packages{
+    z-index: 21 !important;
+}
+
+
+/*--------------------------------------------------------------
                         Media Query
 --------------------------------------------------------------*/
 
@@ -1160,3 +1187,4 @@ section.section_part_02 .IMG_01_1 {
         transform: translateX(-100%);
     }
 }
+

@@ -66,7 +66,7 @@ $(document).ready(function () {
     latestScrollTop = top;
     console.log(latestScrollTop);
 
-    if (latestScrollTop > 1480 && latestScrollTop < 4000) {
+    if (latestScrollTop > 1480 && latestScrollTop < 3000) {
       $(".service_col_three_main").addClass("service_fixed")
     }
     else {
